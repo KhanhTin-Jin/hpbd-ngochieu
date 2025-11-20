@@ -95,3 +95,80 @@ h4 {
   left: 270px;
   color: #b78690;
 }
+
+#bond {
+  position: relative;
+}
+
+.card-trigger {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-trigger:hover,
+.card-trigger:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.35);
+}
+
+.modal-body audio {
+  width: 100%;
+  margin-top: 16px;
+}
+
+@media (max-width: 991px) {
+  .jumbotron {
+    opacity: 0.6;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .jumbotron h1 {
+    font-size: 24px;
+  }
+
+  #bond {
+    margin-top: 15px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 40px 0;
+    font-size: 16px;
+  }
+
+  .containeri img {
+    width: 100%;
+    height: auto;
+  }
+
+  .containeri p {
+    font-size: 75%;
+    left: auto;
+    right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .jumbotron h1 {
+    font-size: 20px;
+  }
+
+  .top-right,
+  .top-left,
+  .bottom-right,
+  .bottom-left,
+  .center,
+  .and {
+    font-size: 65%;
+  }
+}
